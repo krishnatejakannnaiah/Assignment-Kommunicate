@@ -1,0 +1,192 @@
+$myWidth: 90%;
+$myWidth2:60%;
+$myMarginleft2:20%;
+$myMarginleft: 5%;
+$bordermine: 1px solid black;
+$border-radius: 5px;
+$padding: 5px;
+$box-shadow: 1px 1px 3px;
+$list-style-type: none;
+$marginbot: 8px;
+
+$font-family: Arial, Helvetica, sans-serif;
+$border-collapse: collapse;
+$width: 100%;
+
+$imgRad: 5px;
+
+$border: 1px solid #ddd;
+
+$background-color: #f2f2f2;
+
+$fontSize: 13.5px;
+$fontAlign: left;
+
+$background-color1: black;
+$border1: none;
+$border-radius1: 5px; 
+$color1:white;
+$float: right;
+$marginbot2: 5px;
+$color2: royalBlue;
+.total
+{
+  width: $myWidth2;
+  margin-left: $myMarginleft2;
+  border: $bordermine;
+  border-radius: $border-radius;
+  padding: $padding;
+  list-style-type: $list-style-type;
+  margin-bottom: $marginbot;
+  text-align: $fontAlign;
+
+}
+
+
+#tab {
+  font-family: $font-family;
+  border-collapse: $border-collapse;
+  width: $width;
+}
+
+#tab td {
+  border: $border;
+  padding: $padding;
+  border-radius: $border-radius;
+
+}
+
+#tab tr:nth-child(even){background-color: $background-color;}
+#tab tr:nth-child(odd){background-color: $background-color;}
+
+img {
+  border-radius: $imgRad;
+}
+
+.mod{
+  background-color: $background-color1;
+  border: $border1;
+  border-radius: $border-radius1;
+  color: $color1;
+  margin: $marginbot2;
+  transition-duration: 0.3s;
+
+}
+
+.mod:hover{
+  padding: $padding ;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: royalblue;
+  margin: 2px;
+  transition-duration: 0.3s;
+}
+.bott
+{
+  float: $float;
+  padding: $padding ;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: $background-color1;
+  margin: 2px;
+  transition-duration: 0.3s;
+}
+.bott:hover{
+  padding: $padding + 5px;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: $background-color1;
+  margin: 2px;
+  transition-duration: 0.3s;
+}
+
+.inp{
+  height: $marginbot + 20px;
+  margin-top:  $marginbot;
+  margin-left: $marginbot + 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: $marginbot;
+  margin: $marginbot;
+  transition-duration: 0.3s;
+
+}
+.inp:focus{
+  color: royalblue;
+  outline: none;
+  height: $marginbot + 20px;
+  margin-top:  $marginbot;
+  margin-left: $marginbot + 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: royalblue;
+  padding: $marginbot;
+  margin: $marginbot;
+  transition-duration: 0.3s;
+}
+#printS
+{
+  margin: $marginbot + 10px;
+}
+.go
+{
+  height: $marginbot + 40px;
+  border-radius: $border-radius1;
+  background-color: $background-color1;
+  color: $color1;
+  border: $border1;
+  transition-duration: 0.2s;
+
+}
+.go:hover
+{
+  padding: $padding + 5px;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: royalblue;
+  margin: 2px;
+  transition-duration: 0.3s;
+}
+
+.page{
+  padding: $padding ;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: $color2;
+  margin: 2px;
+  transition-duration: 0.3s;
+  margin-bottom: 20px;
+}
+
+.page:hover {
+  padding: $padding + 5px;
+  border: $border1;
+  color: $color1;
+  border-radius: $border-radius1;
+  background-color: $background-color1;
+  margin: 2px;
+  transition-duration: 0.3s;
+
+}
+
+@media screen and (max-width: 700px) {
+  .total
+  {
+    width: $myWidth;
+    margin-left: $myMarginleft;
+    border: $bordermine;
+    border-radius: $border-radius;
+    padding: $padding;
+    list-style-type: $list-style-type;
+    margin-bottom: $marginbot;
+    font-size: 12px;
+    text-align: $fontAlign;
+  }
+}
